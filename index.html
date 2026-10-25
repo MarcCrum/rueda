@@ -62,6 +62,30 @@
         a:hover {
             text-decoration: underline;
         }
+
+        .video-player {
+            position: relative;
+            width: 100%;
+            max-width: 560px;
+            aspect-ratio: 16 / 9;
+            margin-top: 10px;
+        }
+
+        .video-player iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        .video-message {
+            margin-bottom: 0;
+        }
+
+        .video-close {
+            margin-top: 6px;
+            padding: 6px 10px;
+            cursor: pointer;
+        }
         
         footer {
             margin-top: 40px;
@@ -105,33 +129,63 @@
 <body>
 
 <h1>Rueda de Casino – Figuren Overzicht</h1>
-<p>Overzicht van de figuren die we als beginners hebben gedaan, plus figuren uit het repertoire van de bestaande groep. Video’s en uitleg vind je op <a href="https://rueda.casino/rueda/" target="_blank">rueda.casino</a>.</p>
+<p>Overzicht van de figuren die we als beginners hebben gedaan, plus figuren uit het repertoire van de bestaande groep. Klik op een YouTube-link om de video hier af te spelen. Extra uitleg vind je op <a href="https://rueda.casino/rueda/" target="_blank" rel="noopener noreferrer">rueda.casino</a>.</p>
+
+<div class="section">
+    <h2>Figuren per datum</h2>
+    <ul>
+        <li>20 oktober — <a href="#cubanito-cubanita">Cubanito, Cubanita</a></li>
+        <li>27 oktober — <a href="#paseala">Paseala</a></li>
+        <li>11 november — <a href="#vacilala">Vacilala</a></li>
+        <li>18 november — <a href="#manolin">Manolin, ni pa' ti ni pa' mi</a></li>
+        <li>2 december — <a href="#amistad">Amistad</a></li>
+        <li>9 december — <a href="#el-puente">El puente</a></li>
+        <li>16 december — <a href="#tumba-francesa">Tumba francesa</a></li>
+        <li>30 december — <a href="#la-rosa">La rosa</a></li>
+    </ul>
+</div>
 
 <div class="section">
     <h2>Gesloten positie</h2>
     <ul>
-        <li>Par el medio (Vamos al media) — <a href="https://rueda.casino/figure/rueda-de-casino/how-to-start-a-rueda/" target="_blank">video</a></li>
-        <li>Caminando, Arriba, Abajo (Vamos Arriba — Vamos Abajo) — <a href="https://rueda.casino/figure/rueda-de-casino/vamos-abajo/" target="_blank">video</a></li>
-        <li>Adentro-y-afuera — Paseala — Aguajea — <a href="https://rueda.casino/figure/rueda-de-casino/adentro-y-afuera-paseala-aguajea/" target="_blank">video</a></li>
+        <li>Par el medio (Vamos al media) — <a class="youtube-link" data-video-id="wDllMcpubuA" data-video-title="Par el medio" href="https://www.youtube.com/watch?v=wDllMcpubuA" target="_blank" rel="noopener noreferrer">YouTube-video</a> · <a href="https://rueda.casino/figure/rueda-de-casino/how-to-start-a-rueda/" target="_blank" rel="noopener noreferrer">extra uitleg</a></li>
+        <li>Caminando, Arriba, Abajo (Vamos Arriba — Vamos Abajo) — <a class="youtube-link" data-video-id="FmDc-5kG8Nc" data-video-title="Vamos arriba, vamos abajo" href="https://www.youtube.com/watch?v=FmDc-5kG8Nc" target="_blank" rel="noopener noreferrer">YouTube-video</a> · <a href="https://rueda.casino/figure/rueda-de-casino/vamos-abajo/" target="_blank" rel="noopener noreferrer">extra uitleg</a></li>
+        <li id="paseala">Adentro-y-afuera — Paseala — Aguajea — <a class="youtube-link" data-video-id="j3fo8gsFpqY" data-video-title="Paseala" href="https://www.youtube.com/watch?v=j3fo8gsFpqY" target="_blank" rel="noopener noreferrer">YouTube-video: Paseala</a> · <a class="youtube-link" data-video-id="_qAIDpG0M14" data-video-title="Paseala (27 oktober)" href="https://www.youtube.com/watch?v=_qAIDpG0M14" target="_blank" rel="noopener noreferrer">video 27-10</a> · <a href="https://rueda.casino/figure/rueda-de-casino/adentro-y-afuera-paseala-aguajea/" target="_blank" rel="noopener noreferrer">extra uitleg</a></li>
+        <li>Sacala (exhibela) — <a class="youtube-link" data-video-id="zGqU2xfdS1w" data-video-title="Sacala (exhibela)" href="https://www.youtube.com/watch?v=zGqU2xfdS1w" target="_blank" rel="noopener noreferrer">YouTube-video</a> <span class="note">herhaald: doble (2x)</span></li>
     </ul>
     <div class="section">
         <h3>Naar open positie</h3>
         <ul>
-            <li>Dile que no — <a href="https://rueda.casino/rueda/dile-que-no" target="_blank">video</a></li>
+            <li>Dile que no — <a class="youtube-link" data-video-id="iKfS6vNJBLg" data-video-title="Dile que no" href="https://www.youtube.com/watch?v=iKfS6vNJBLg" target="_blank" rel="noopener noreferrer">YouTube-video</a> · <a href="https://rueda.casino/rueda/dile-que-no" target="_blank" rel="noopener noreferrer">extra uitleg</a></li>
         </ul>
     </div>
     <div class="section">
         <h3>Overgang</h3>
         <ul>
-            <li><a href="https://rueda.casino/figure/rueda-de-casino/tarro/" target="_blank">Tarro</a> <span class="note">partner wissel in gesloten positie</span> </li>
+            <li><a class="youtube-link" data-video-id="GU-y05c2pys" data-video-title="Tarro" href="https://www.youtube.com/watch?v=GU-y05c2pys" target="_blank" rel="noopener noreferrer">Tarro-video</a> · <a href="https://rueda.casino/figure/rueda-de-casino/tarro/" target="_blank" rel="noopener noreferrer">extra uitleg</a> <span class="note">partner wissel in gesloten positie</span> </li>
             <li>Guapea (basis)</li>
-            <li>Dame — <a href="https://rueda.casino/figure/rueda-de-casino/dame-dame-una-dame-otra/" target="_blank">video</a>
+            <li>Camina la rueda — <a class="youtube-link" data-video-id="vCdGutx1AP8" data-video-title="Camina la rueda" href="https://www.youtube.com/watch?v=vCdGutx1AP8" target="_blank" rel="noopener noreferrer">YouTube-video</a></li>
+            <li>Dame — <a class="youtube-link" data-video-id="HuAXZzMrU88" data-video-title="Dame" href="https://www.youtube.com/watch?v=HuAXZzMrU88" target="_blank" rel="noopener noreferrer">YouTube-video</a> · <a href="https://rueda.casino/figure/rueda-de-casino/dame-dame-una-dame-otra/" target="_blank" rel="noopener noreferrer">extra uitleg</a>
                 <ul>
-                    <li>Una manita (Dame con mano) <a href="https://www.youtube.com/watch?v=dN5-ItEzeVY" target="_blank">video</a> <span class="note">herhaald: dos, tres manitas</span></li>
-                    <li>Dame dos — <a href="https://rueda.casino/figure/rueda-de-casino/dame-dos/" target="_blank">video</a></li>
-                    <li>Dame cero</li>
+                    <li>Una manita (Dame con mano) <a class="youtube-link" data-video-id="dN5-ItEzeVY" data-video-title="Una manita" href="https://www.youtube.com/watch?v=dN5-ItEzeVY" target="_blank" rel="noopener noreferrer">YouTube-video</a> <span class="note">herhaald: dos, tres manitas</span></li>
+                    <li>Dame dos — <a class="youtube-link" data-video-id="CEhykbxRV6k" data-video-title="Dame dos" href="https://www.youtube.com/watch?v=CEhykbxRV6k" target="_blank" rel="noopener noreferrer">YouTube-video</a> · <a href="https://rueda.casino/figure/rueda-de-casino/dame-dos/" target="_blank" rel="noopener noreferrer">extra uitleg</a></li>
+                    <li>Y una pa'rriba — <a class="youtube-link" data-video-id="VBe3PkP8Bi4" data-video-title="Dame y una pa'rriba" href="https://www.youtube.com/watch?v=VBe3PkP8Bi4" target="_blank" rel="noopener noreferrer">YouTube-video</a></li>
+                    <li>Mentira <span class="note">zonder Dame</span></li>
+                    <li>Directo — <a class="youtube-link" data-video-id="LvrWKc_ngio" data-video-title="Directo" href="https://www.youtube.com/watch?v=LvrWKc_ngio" target="_blank" rel="noopener noreferrer">YouTube-video</a>
+                        <ul>
+                            <li>Directo y dame</li>
+                            <li>Directo y prima</li>
+                            <li>Regresso <span class="note">met draai om rechterhand terug naar de eerste partner</span></li>
+                            <li>Passando <span class="note">een partner overslaan</span></li>
+                            <li>Pescao</li>
+                        </ul>
+                    </li>
+                    <li>Dos con dos <span class="note">Dame dos met klap op 1-2</span></li>
+                    <li>Una con dos <span class="note">Dame una met klap op 1-2</span></li>
+                    <li>Dame cero <span class="note">zonder enchufla</span></li>
                 </ul>
             </li>
+            <li>Engañala — <a class="youtube-link" data-video-id="p1ZEP2brQUU" data-video-title="Engañala" href="https://www.youtube.com/watch?v=p1ZEP2brQUU" target="_blank" rel="noopener noreferrer">YouTube-video</a></li>
         </ul>
     </div>
 </div>
@@ -141,10 +195,13 @@
     <div class="section">
         <h3>Prima</h3>
         <ul>
-            <li>Prima — <a href="https://rueda.casino/figure/rueda-de-casino/la-prima/" target="_blank">video</a>
+            <li>Prima — <a class="youtube-link" data-video-id="4ETtxg3IwQY" data-video-title="La prima" href="https://www.youtube.com/watch?v=4ETtxg3IwQY" target="_blank" rel="noopener noreferrer">YouTube-video</a> · <a href="https://rueda.casino/figure/rueda-de-casino/la-prima/" target="_blank" rel="noopener noreferrer">extra uitleg</a>
                 <ul>
-                    <li>Prima con hermana — <a href="https://rueda.casino/figure/rueda-de-casino/prima-con-la-hermana/" target="_blank">video</a></li>
-                    <li>Prima grande <span class="note">extra 360 draai</span></li>
+                    <li>Prima con hermana — <a class="youtube-link" data-video-id="8iqA3RH5m_s" data-video-title="Prima con hermana" href="https://www.youtube.com/watch?v=8iqA3RH5m_s" target="_blank" rel="noopener noreferrer">YouTube-video</a> · <a href="https://rueda.casino/figure/rueda-de-casino/prima-con-la-hermana/" target="_blank" rel="noopener noreferrer">extra uitleg</a></li>
+                    <li>Prima doble <span class="note">twee keer</span></li>
+                    <li>Prima grande <span class="note">1½ draai</span></li>
+                    <li>Prima con familia — <a class="youtube-link" data-video-id="XnHjxMT5Zf4" data-video-title="Prima con familia" href="https://www.youtube.com/watch?v=XnHjxMT5Zf4" target="_blank" rel="noopener noreferrer">YouTube-video</a></li>
+                    <li>La cadena (hombres, mujeres también) — <a class="youtube-link" data-video-id="WAQfpV-OX60" data-video-title="La cadena" href="https://www.youtube.com/watch?v=WAQfpV-OX60" target="_blank" rel="noopener noreferrer">YouTube-video</a></li>
                 </ul>
             </li>
         </ul>
@@ -153,18 +210,30 @@
     <div class="section">
         <h3>Enchufla</h3>
         <ul>
-            <li>Enchufla — <a href="https://www.youtube.com/watch?v=fzBhfk3hq6M" target="_blank">video</a> <a href="https://rueda.casino/figure/rueda-de-casino/enchufla-y-dame-arriba/" target="_blank">video</a>
+            <li>Enchufla — <a class="youtube-link" data-video-id="fzBhfk3hq6M" data-video-title="Enchufla" href="https://www.youtube.com/watch?v=fzBhfk3hq6M" target="_blank" rel="noopener noreferrer">YouTube-video</a> · <a href="https://rueda.casino/figure/rueda-de-casino/enchufla-y-dame-arriba/" target="_blank" rel="noopener noreferrer">extra uitleg</a>
                 <ul>
-                    <li>Enchufla doble — <a href="https://rueda.casino/rueda/enchufla-doble" target="_blank">video</a> <span class="note">"met twee handen"</span></li>
-                    <li>Enchufla cero — <a href="https://www.youtube.com/watch?v=R7Kc8X79Dxk" target="_blank">video</a></li>
-                    <li>Enchufla con mambo — <a href="https://rueda.casino/figure/rueda-de-casino/enchufla-con-mambo/" target="_blank">video</a></li>
-                    <li>Enchufla y arriba — <a href="https://rueda.casino/figure/rueda-de-casino/enchufla-y-arriba-y-dame-pafuera-padentro/" target="_blank">video</a></li>
-                    <li>Enchufla El centro (enchufla y al medio — Derecha — Izquierda) — <a href="https://rueda.casino/figure/rueda-de-casino/enchufla-y-al-medio/" target="_blank">video</a></li>
-                    <li>Cero y dame — <a href="https://rueda.casino/figure/rueda-de-casino/cero-y-dame/" target="_blank">video</a></li>
-                    <li>Festival de enchufla (in de video: Festival de pelota) — <a href="https://rueda.casino/figure/rueda-de-casino/festival-de-pelota/" target="_blank">video</a> <span class="note">In de video wordt op 7 geklapt; wij klappen op 1, 1-2 en 1-2-3; wij doen een enkele enchufla</span></li>
-                    <li>Kentucky — <a href="https://www.youtube.com/shorts/2wxlbBoygbU" target="_blank">video</a> <a href="https://www.youtube.com/watch?v=WjEmeSgWHg0" target="_blank">uitleg</a></li>
-                    <li>Sacala (enchufla y sacala) — <a href="https://rueda.casino/figure/rueda-de-casino/sacala/" target="_blank">video</a> <span class="note">herhaald: doble; Sacala hoeft niet alleen na een enchufla; het kan bijvoorbeeld ook vanuit een guapea.</span></li>
-                    <li>Cubanito, Cubanita — <a href="https://rueda.casino/figure/rueda-de-casino/cubanito-cubanitacubanita-cubanito/" target="_blank">video</a></li>
+                    <li>Enchufla doble — <a class="youtube-link" data-video-id="wO-7SUY3mxY" data-video-title="Enchufla doble" href="https://www.youtube.com/watch?v=wO-7SUY3mxY" target="_blank" rel="noopener noreferrer">YouTube-video</a> · <a href="https://rueda.casino/rueda/enchufla-doble" target="_blank" rel="noopener noreferrer">extra uitleg</a> <span class="note">"met twee handen"</span></li>
+                    <li>Enchufla cero (El cero) — <a class="youtube-link" data-video-id="R7Kc8X79Dxk" data-video-title="Enchufla cero (El cero)" href="https://www.youtube.com/watch?v=R7Kc8X79Dxk" target="_blank" rel="noopener noreferrer">YouTube-video</a></li>
+                    <li>Enchufla con mambo — <a class="youtube-link" data-video-id="NsvBtuZfF9A" data-video-title="Enchufla con mambo" href="https://www.youtube.com/watch?v=NsvBtuZfF9A" target="_blank" rel="noopener noreferrer">YouTube-video</a> · <a href="https://rueda.casino/figure/rueda-de-casino/enchufla-con-mambo/" target="_blank" rel="noopener noreferrer">extra uitleg</a></li>
+                    <li>Enchufla con rumba — <a class="youtube-link" data-video-id="WK5EvEmgZgc" data-video-title="Enchufla con rumba" href="https://www.youtube.com/watch?v=WK5EvEmgZgc" target="_blank" rel="noopener noreferrer">YouTube-video</a></li>
+                    <li>Enchufla la reina <span class="note">twee keer stampen en klappen</span></li>
+                    <li>Enchufla y arriba — <a href="https://rueda.casino/figure/rueda-de-casino/enchufla-y-arriba-y-dame-pafuera-padentro/" target="_blank" rel="noopener noreferrer">extra uitleg</a></li>
+                    <li>Arriba y al bajo <span class="note">enchufla naar de vorige partner en terug naar de eerste partner</span></li>
+                    <li>Enchufla El centro (enchufla y al medio — Derecha — Izquierda) — <a class="youtube-link" data-video-id="psR0esl5R6c" data-video-title="Enchufla el centro" href="https://www.youtube.com/watch?v=psR0esl5R6c" target="_blank" rel="noopener noreferrer">YouTube-video</a> · <a href="https://rueda.casino/figure/rueda-de-casino/enchufla-y-al-medio/" target="_blank" rel="noopener noreferrer">extra uitleg</a></li>
+                    <li>Hombres/mujeres a la izquierda/derecha — <a class="youtube-link" data-video-id="psR0esl5R6c" data-video-title="Hombres y mujeres a la izquierda o derecha" href="https://www.youtube.com/watch?v=psR0esl5R6c" target="_blank" rel="noopener noreferrer">YouTube-video</a></li>
+                    <li>La flor <span class="note">leiders draaien op 1 met de armen omhoog in een cirkel; volgers op 5</span></li>
+                    <li>Vuelta la rueda <span class="note">leiders eindigen met draai en klap op 1-2; volgers op 5-6</span></li>
+                    <li>España (van open naar gesloten positie) — <a class="youtube-link" data-video-id="qPAN4vfIJYQ" data-video-title="España" href="https://www.youtube.com/watch?v=qPAN4vfIJYQ" target="_blank" rel="noopener noreferrer">YouTube-video</a></li>
+                    <li>Americano/americana y caminando — <a class="youtube-link" data-video-id="h3sE3suX5HI" data-video-title="Americano y caminando" href="https://www.youtube.com/watch?v=h3sE3suX5HI" target="_blank" rel="noopener noreferrer">YouTube-video</a></li>
+                    <li>Se fue y enchufla/la prima <span class="note">eindigen met enchufla of la prima</span></li>
+                    <li>Enchufita <span class="note">enchufla heen, handen overpakken, enchufla terug</span></li>
+                    <li id="cero-y-dame">Cero y dame — <a class="youtube-link" data-video-id="q7NduKAKSoQ" data-video-title="Cero y dame" href="https://www.youtube.com/watch?v=q7NduKAKSoQ" target="_blank" rel="noopener noreferrer">YouTube-video</a> · <a href="https://rueda.casino/figure/rueda-de-casino/cero-y-dame/" target="_blank" rel="noopener noreferrer">extra uitleg</a></li>
+                    <li>Festival de enchufla (in de video: Festival de pelota) — <a class="youtube-link" data-video-id="wY1fOK4GCXM" data-video-title="Festival de enchufla" href="https://www.youtube.com/watch?v=wY1fOK4GCXM" target="_blank" rel="noopener noreferrer">YouTube-video</a> · <a href="https://rueda.casino/figure/rueda-de-casino/festival-de-pelota/" target="_blank" rel="noopener noreferrer">extra uitleg</a> <span class="note">In de video wordt op 7 geklapt; wij klappen op 1, 1-2 en 1-2-3; wij doen een enkele enchufla</span></li>
+                    <li id="coca-cola">Coca-cola — <a class="youtube-link" data-video-id="__S_LgIpAns" data-video-title="Coca-cola" href="https://www.youtube.com/watch?v=__S_LgIpAns" target="_blank" rel="noopener noreferrer">YouTube-video</a></li>
+                    <li id="el-dedo">El dedo — <a class="youtube-link" data-video-id="-i5tF1zgJak" data-video-title="El dedo" href="https://www.youtube.com/watch?v=-i5tF1zgJak" target="_blank" rel="noopener noreferrer">YouTube-video</a></li>
+                    <li>Kentucky — <a class="youtube-link" data-video-id="6CXoxcQ3bAk" data-video-title="Kentucky" href="https://www.youtube.com/watch?v=6CXoxcQ3bAk" target="_blank" rel="noopener noreferrer">YouTube-video</a> · <a href="https://www.youtube.com/watch?v=WjEmeSgWHg0" target="_blank" rel="noopener noreferrer">extra uitleg</a></li>
+                    <li id="enchufla-y-sacala">Sacala (enchufla y sacala) — <a class="youtube-link" data-video-id="NK7N7CWPSOc" data-video-title="Enchufla y sacala" href="https://www.youtube.com/watch?v=NK7N7CWPSOc" target="_blank" rel="noopener noreferrer">YouTube-video</a> · <a href="https://rueda.casino/figure/rueda-de-casino/sacala/" target="_blank" rel="noopener noreferrer">extra uitleg</a> <span class="note">herhaald: doble; Sacala hoeft niet alleen na een enchufla; het kan bijvoorbeeld ook vanuit een guapea.</span></li>
+                    <li id="cubanito-cubanita">Cubanito, Cubanita — <a class="youtube-link" data-video-id="feEukuqAQBA" data-video-title="Cubanito, Cubanita" href="https://www.youtube.com/watch?v=feEukuqAQBA" target="_blank" rel="noopener noreferrer">YouTube-video</a> · <a href="https://rueda.casino/figure/rueda-de-casino/cubanito-cubanitacubanita-cubanito/" target="_blank" rel="noopener noreferrer">extra uitleg</a></li>
                 </ul>
             </li>
         </ul>
@@ -173,19 +242,37 @@
     <div class="section">
         <h3>Vacilala</h3>
         <ul>
-            <li>Sombrero — <a href="https://rueda.casino/video/sombrero-casino-rueda/" target="_blank">video</a>
+            <li id="vacilala">Vacilala — <a class="youtube-link" data-video-id="Ci_otsJ1jzE" data-video-title="Vacilala" href="https://www.youtube.com/watch?v=Ci_otsJ1jzE" target="_blank" rel="noopener noreferrer">YouTube-video</a></li>
+            <li>Sombrero — <a class="youtube-link" data-video-id="Toehw_ZrEuQ" data-video-title="Sombrero" href="https://www.youtube.com/watch?v=Toehw_ZrEuQ" target="_blank" rel="noopener noreferrer">YouTube-video</a> · <a href="https://rueda.casino/video/sombrero-casino-rueda/" target="_blank" rel="noopener noreferrer">extra uitleg</a>
                 <ul>
-                    <li>Sombrero con mambo — <a href="https://rueda.casino/figure/rueda-de-casino/sombrero-con-mambo/" target="_blank">video</a></li>
+                    <li>Sombrero con mambo — <a class="youtube-link" data-video-id="1O8YYsy0Hjs" data-video-title="Sombrero con mambo" href="https://www.youtube.com/watch?v=1O8YYsy0Hjs" target="_blank" rel="noopener noreferrer">YouTube-video</a> · <a href="https://rueda.casino/figure/rueda-de-casino/sombrero-con-mambo/" target="_blank" rel="noopener noreferrer">extra uitleg</a></li>
                 </ul>
             </li>
-            <li>Setenta — <a href="https://youtu.be/_B55w-0o0qw" target="_blank">video</a> <span class="note">Wij beginnen Setenta vanuit een right turn.</span></li>
+            <li>Setenta — <a class="youtube-link" data-video-id="_B55w-0o0qw" data-video-title="Setenta" href="https://www.youtube.com/watch?v=_B55w-0o0qw" target="_blank" rel="noopener noreferrer">YouTube-video</a> <span class="note">Wij beginnen Setenta vanuit een right turn.</span>
+                <ul>
+                    <li>Setenta, ochenta y uno</li>
+                </ul>
+            </li>
         </ul>
     </div>
 
     <div class="section">
         <h3>Overig</h3>
         <ul>
-            <li>Fly (Fly, linea, rolin) — <a href="https://rueda.casino/figure/rueda-de-casino/fly-linea-rolin/" target="_blank">video</a><span class="note">muy alto: fly met sprong; mentira: fly zonder echte klap  </span></li>
+            <li>Fly (Fly, linea, rolin) — <a href="https://rueda.casino/figure/rueda-de-casino/fly-linea-rolin/" target="_blank" rel="noopener noreferrer">uitleg</a> <span class="note">klap op 1</span>
+                <ul>
+                    <li>Muy alto <span class="note">klap met sprong</span></li>
+                </ul>
+            </li>
+            <li id="manolin">Manolin, ni pa' ti ni pa' mi — <a class="youtube-link" data-video-id="5wjxQCmwWbg" data-video-title="Manolin, ni pa' ti ni pa' mi" href="https://www.youtube.com/watch?v=5wjxQCmwWbg" target="_blank" rel="noopener noreferrer">YouTube-video</a></li>
+            <li id="amistad">Amistad — <a class="youtube-link" data-video-id="tq9pvG-QE0s" data-video-title="Amistad" href="https://www.youtube.com/watch?v=tq9pvG-QE0s" target="_blank" rel="noopener noreferrer">YouTube-video</a></li>
+            <li id="el-puente">El puente — <a class="youtube-link" data-video-id="r4M82bj3VNM" data-video-title="El puente" href="https://www.youtube.com/watch?v=r4M82bj3VNM" target="_blank" rel="noopener noreferrer">YouTube-video</a></li>
+            <li id="tumba-francesa">Tumba francesa — <a class="youtube-link" data-video-id="IszWWzNFjIA" data-video-title="Tumba francesa" href="https://www.youtube.com/watch?v=IszWWzNFjIA" target="_blank" rel="noopener noreferrer">YouTube-video</a></li>
+            <li id="la-rosa">La rosa <span class="note">enchufla, eenmaal La flor, Dile que no</span>
+                <ul>
+                    <li>Complicado <span class="note">herhaal La flor tot het commando Dile que no</span></li>
+                </ul>
+            </li>
         </ul>
     </div>
 </div>
@@ -193,8 +280,63 @@
 <footer>
     <p class="note">Bron: <a href="https://rueda.casino/rueda/" target="_blank">rueda.casino</a></p>
     <p class="note"><a href="https://www.youtube.com/watch?v=sRAZmtcBlAw&list=PL8hFYIpg2Jp0aIIUjOAljXCmX7kz-rXyp" target="_blank">inspiratie</a></p>
-    <p class="note">Laatste update: 2024-06-10</p>
+    <h3>Nieuwe figuren</h3>
+    <ul>
+        <li><a href="#cero-y-dame">Cero y dame</a></li>
+        <li><a href="#enchufla-y-sacala">Enchufla y sacala</a></li>
+        <li><a href="#coca-cola">Coca-cola</a></li>
+        <li><a href="#el-dedo">El dedo</a></li>
+    </ul>
+    <p class="note">Laatste update: 2026-10-25</p>
 </footer>
+
+<script>
+    document.addEventListener("click", (event) => {
+        const link = event.target.closest(".youtube-link");
+        if (!link) return;
+
+        event.preventDefault();
+        document.querySelectorAll(".video-player").forEach((player) => player.remove());
+
+        const player = document.createElement("div");
+        player.className = "video-player";
+
+        const closeButton = document.createElement("button");
+        closeButton.className = "video-close";
+        closeButton.type = "button";
+        closeButton.textContent = "Video sluiten";
+        closeButton.addEventListener("click", () => player.remove());
+
+        link.insertAdjacentElement("afterend", player);
+
+        if (window.location.protocol !== "http:" && window.location.protocol !== "https:") {
+            const message = document.createElement("p");
+            message.className = "video-message";
+            message.textContent = "Video’s insluiten werkt alleen als deze pagina via HTTP of HTTPS wordt geopend. Bekijk deze video ondertussen op ";
+
+            const fallbackLink = document.createElement("a");
+            fallbackLink.href = link.href;
+            fallbackLink.target = "_blank";
+            fallbackLink.rel = "noopener noreferrer";
+            fallbackLink.textContent = "YouTube";
+
+            message.append(fallbackLink, ".");
+            player.append(message, closeButton);
+            return;
+        }
+
+        const iframe = document.createElement("iframe");
+        const embedUrl = new URL(`https://www.youtube-nocookie.com/embed/${encodeURIComponent(link.dataset.videoId)}`);
+        embedUrl.searchParams.set("origin", window.location.origin);
+        iframe.src = embedUrl.href;
+        iframe.title = `${link.dataset.videoTitle} video`;
+        iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+        iframe.allowFullscreen = true;
+        iframe.referrerPolicy = "origin";
+
+        player.append(iframe, closeButton);
+    });
+</script>
 
 </body>
 </html>
